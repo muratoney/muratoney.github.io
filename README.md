@@ -1,4 +1,5 @@
-# Murat's Personal Website - React Version
+# Personal Website
+
 
 A modern, responsive personal website built with React, featuring a clean design and smooth animations. This website showcases Murat's skills as a developer and photographer.
 
