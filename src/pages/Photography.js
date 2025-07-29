@@ -241,7 +241,7 @@ const Photography = () => {
                     <p>
                         Photography has been a hobby of mine for over 5 years, allowing me to capture the world's beauty 
                         through my unique perspective. I particularly enjoy taking nature photos, but I also enjoy taking portraits, street, 
-                        and landscape photos. I love to take digital photos, but I there is something about film that I love. I enjoy using my 
+                        and landscape photos. I love to take digital photos, but I there is something unique about film that I love. I enjoy using my 
                         Minolta X-700 to take film photos.
                     </p>
                     <div className="equipment">

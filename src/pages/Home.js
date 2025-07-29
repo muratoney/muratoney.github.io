@@ -150,14 +150,14 @@ const Home = () => {
                             </a>
                             <a
                                 className="contact-item"
-                                href="https://www.linkedin.com/in/murat-oney-b16682175/"
+                                href="https://www.linkedin.com/in/murat-oney"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <i className="fab fa-linkedin"></i>
                                 <div>
                                     <h3>LinkedIn</h3>
-                                    <p>linkedin.com/in/murat-oney-b16682175/</p>
+                                    <p>linkedin.com/in/murat-oney</p>
                                 </div>
                             </a>
                             <a
