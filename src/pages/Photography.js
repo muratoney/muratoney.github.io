@@ -198,6 +198,11 @@ const Photography = () => {
                                             src={photo.image} 
                                             alt={photo.title}
                                             className="photo-image"
+                                            loading="lazy"
+                                            decoding="async"
+                                            onLoad={(e) => {
+                                                e.target.classList.add('loaded');
+                                            }}
                                             onError={(e) => {
                                                 // Fallback to icon if image fails to load
                                                 e.target.style.display = 'none';
@@ -290,6 +295,8 @@ const Photography = () => {
                                     src={selectedPhoto.image} 
                                     alt={selectedPhoto.title}
                                     className="lightbox-image"
+                                    loading="lazy"
+                                    decoding="async"
                                     onError={(e) => {
                                         // Fallback to icon if image fails to load
                                         e.target.style.display = 'none';

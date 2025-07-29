@@ -505,10 +505,22 @@ main {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .photo-item:hover .photo-image {
     transform: scale(1.05);
+}
+
+/* Image loading optimization */
+.photo-image[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-image[loading="lazy"].loaded {
+    opacity: 1;
 }
 
 .photo-placeholder.landscape {

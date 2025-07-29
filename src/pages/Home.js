@@ -85,10 +85,9 @@ const Home = () => {
                             {typedName}
                             <span className="typewriter-cursor">|</span>
                         </h1>
-                        <p className="hero-subtitle">Developer & Photographer</p>
+                        <p className="hero-subtitle">CS Graduate & Software Developer</p>
                         <p className="hero-description">
-                            I'm passionate about creating innovative software solutions 
-                            and capturing beautiful moments through photography. Explore my work and get in touch.
+                        I recently earned my B.S. in Computer Science from California Polytechnic State University. With 4+ years of hands-on coding experience, I’m driven by a passion for building innovative, impactful software solutions.
                         </p>
                         <div className="hero-buttons">
                             <Link to="/projects" className="btn btn-primary">View My Projects</Link>
@@ -107,10 +106,10 @@ const Home = () => {
                             <p>
                                 I'm a dedicated developer with a passion for creating meaningful and innovative software solutions. 
                                 My journey in technology has led me to work on various projects that challenge me to think creatively 
-                                and solve complex problems.
+                                and solve complex problems. 
                             </p>
                             <p>
-                                When I'm not coding I enjoy exploring the world and capturing moments through photography. 
+                            Outside of coding, I enjoy staying active at the gym, capturing moments through photography, and occasionally trying out new recipes in the kitchen. Whether I'm debugging code or baking sourdough, I’m always curious and looking for new ways to challenge myself.
                             </p>
                             <div className="skills">
                                 <h3>Skills & Technologies</h3>
