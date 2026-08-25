@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murat Oney | Software Engineer &amp; Founder</title>
+  <meta name="description" content="Murat Oney is a software engineer and the founder of Distill Software LLC. He solo-built Distill, a study platform that turns open textbooks into interactive courses, live in production at studydistill.com.">
+  <meta property="og:title" content="Murat Oney | Software Engineer &amp; Founder">
+  <meta property="og:description" content="Founder of Distill Software LLC. Builder of Distill, a study platform that turns open textbooks into interactive, machine-verified courses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://muratoney.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f6f1e6'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' fill='%23211c15' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="#top">Murat&nbsp;Oney</a>
+      <nav class="nav-links" id="navLinks" aria-label="Site">
+        <a href="#distill">Distill</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="overline load-1">Founder &amp; Software Engineer</p>
+        <h1 class="hero-name load-2">Murat Oney<span class="period">.</span></h1>
+        <p class="hero-lede load-3">
+          I design, build, and run software end to end. My latest is
+          <strong>Distill</strong>, a study platform that turns open textbooks
+          into interactive courses. Solo-built, live in production, with Stripe
+          billing and machine-verified content.
+        </p>
+        <div class="hero-actions load-4">
+          <a class="btn btn-primary" href="#distill">Explore Distill</a>
+          <a class="btn btn-ghost" href="https://github.com/muratoney" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/murat-oney" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to software engineering roles</span>
+        </div>
+      </div>
+      <div class="container hero-stats load-5" role="list">
+        <div class="stat" role="listitem">
+          <span class="stat-num">~2,000</span>
+          <span class="stat-label">practice questions audited</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="stat-num">0</span>
+          <span class="stat-label">wrong answer keys shipped</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="stat-num">500&ndash;1,000</span>
+          <span class="stat-label">questions generated per textbook</span>
+        </div>
+        <div class="stat" role="listitem">
+          <span class="stat-num">Solo</span>
+          <span class="stat-label">product, pipeline, infra, billing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DISTILL ============ -->
+    <section class="section" id="distill">
+      <div class="container">
+        <p class="overline reveal">01 &middot; Flagship &middot; Distill Software LLC</p>
+        <h2 class="reveal">Distill turns open textbooks into<br class="wide-only"> interactive courses.</h2>
+        <div class="distill-grid">
+          <div class="distill-copy">
+            <p class="reveal">
+              Distill starts with openly licensed textbooks that I curate, and
+              rebuilds each one as a complete course. Every chapter becomes
+              concepts with explanations, figures, and practice questions,
+              wrapped in XP, streaks, study pets, and leaderboards, and
+              scheduled for long-term review with FSRS spaced repetition.
+              Students pick a ready-made course from the catalog and start
+              studying.
+            </p>
+            <p class="reveal">
+              Behind it is a Python pipeline I built from scratch. Each book is
+              extracted from PDF, mapped into concepts, and run through
+              multi-pass LLM generation that produces 500 to 1,000 practice
+              questions per textbook, ingested into PostgreSQL with validation
+              at every step.
+            </p>
+            <p class="reveal">
+              The part I am proudest of is the <strong>blind-solve gate</strong>:
+              an independent model must re-derive every computed answer before a
+              question ships. That took wrong answer keys from 1.4 percent to
+              zero across roughly 2,000 audited questions.
+            </p>
+            <div class="distill-cta reveal">
+              <a class="btn btn-primary" href="https://studydistill.com" target="_blank" rel="noopener">Visit studydistill.com</a>
+              <span class="cta-note">Founded March 2026 &middot; Live in production</span>
+            </div>
+          </div>
+
+          <div class="pipeline reveal" aria-label="Distill content pipeline">
+            <p class="pipeline-title">The content pipeline</p>
+            <ol class="pipeline-steps">
+              <li class="pipe-step"><span class="pipe-dot"></span><div><strong>Curate</strong><span>an open textbook chosen for the catalog</span></div></li>
+              <li class="pipe-step"><span class="pipe-dot"></span><div><strong>Extract</strong><span>pages to markdown and figures</span></div></li>
+              <li class="pipe-step"><span class="pipe-dot"></span><div><strong>Map</strong><span>chapters into discrete concepts</span></div></li>
+              <li class="pipe-step"><span class="pipe-dot"></span><div><strong>Generate</strong><span>explanations and questions, multi-pass</span></div></li>
+              <li class="pipe-step pipe-verify"><span class="pipe-dot"></span><div><strong>Verify</strong><span>blind-solve gate re-derives every computed answer</span></div></li>
+              <li class="pipe-step"><span class="pipe-dot"></span><div><strong>Study</strong><span>interactive course with spaced repetition</span></div></li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature reveal">
+            <h3>Verified by design</h3>
+            <p>Generated content is fact-checked against the source text, and computed answers pass an independent blind-solve check before students ever see them.</p>
+          </div>
+          <div class="feature reveal">
+            <h3>Built to retain</h3>
+            <p>FSRS spaced-repetition scheduling decides what each student reviews and when, so studying compounds instead of evaporating.</p>
+          </div>
+          <div class="feature reveal">
+            <h3>Feels like a game</h3>
+            <p>XP, streaks, study pets, and leaderboards make finishing a chapter something students want to do again tomorrow.</p>
+          </div>
+          <div class="feature reveal">
+            <h3>Run like a product</h3>
+            <p>Stripe billing, an installable PWA, and production infrastructure across Vercel, Railway, and Neon. I operate all of it.</p>
+          </div>
+        </div>
+
+        <p class="tech-line reveal" aria-label="Distill tech stack">TypeScript &middot; Next.js &middot; PostgreSQL &middot; Drizzle ORM &middot; Python &middot; Stripe &middot; PWA &middot; Vercel &middot; Railway &middot; Neon &middot; Cloudflare R2</p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="overline reveal">02 &middot; Experience</p>
+        <h2 class="reveal">Where I have worked.</h2>
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-meta">
+              <span class="tl-dates">Mar 2026 &ndash; Present</span>
+            </div>
+            <div class="tl-body">
+              <h3>Founder &amp; Software Engineer</h3>
+              <p class="tl-org">Distill Software LLC</p>
+              <ul>
+                <li>Founded the company and shipped the entire product solo: Python content pipeline, Next.js app, PostgreSQL schema, infrastructure, and Stripe billing.</li>
+                <li>Built the multi-pass generation pipeline that produces 500 to 1,000 verified practice questions per textbook.</li>
+                <li>Cut wrong answer keys from 1.4 percent to zero with a blind-solve verification gate across roughly 2,000 audited questions.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-meta">
+              <span class="tl-dates">Jan 2024 &ndash; Feb 2025</span>
+            </div>
+            <div class="tl-body">
+              <h3>Student Lead</h3>
+              <p class="tl-org">Cal Poly Information Technology Services</p>
+              <ul>
+                <li>Led a team of 12 student technicians supporting 800 to 900 staff and faculty across three colleges and the campus library, keeping response times under 24 hours.</li>
+                <li>Maintained a 4.6/5 average ticket-resolution satisfaction score across the team.</li>
+                <li>Interviewed, hired, and onboarded 8 technicians, ramping each to independent ticket work within 4 to 5 weeks.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-meta">
+              <span class="tl-dates">Sep 2022 &ndash; Jan 2024</span>
+            </div>
+            <div class="tl-body">
+              <h3>Student Assistant</h3>
+              <p class="tl-org">Cal Poly Information Technology Services</p>
+              <ul>
+                <li>Imaged and deployed 100+ devices for the Campus Computer Refresh program and the student rental fleet, managed through Jamf and Active Directory.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-meta">
+              <span class="tl-dates">Sep 2020 &ndash; Dec 2024</span>
+            </div>
+            <div class="tl-body">
+              <h3>B.S. Computer Science</h3>
+              <p class="tl-org">California Polytechnic State University, San Luis Obispo</p>
+              <ul>
+                <li>Dean's List, Fall 2024 and Winter 2024.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="overline reveal">03 &middot; Selected projects</p>
+        <h2 class="reveal">Other things I have built.</h2>
+        <div class="project-grid">
+          <article class="project reveal">
+            <span class="proj-num">01</span>
+            <h3>ITS Support Chatbot <span class="proj-tag">Senior project</span></h3>
+            <p>Retrieval pipeline that grounds GPT responses in Cal Poly's IT knowledge base: TF-IDF indexing and cosine ranking feed the top articles into the prompt. The top-ranked article was correct about 85 percent of the time across 200 real student questions. Chose TF-IDF over embeddings to eliminate per-query API cost with no measurable quality loss.</p>
+            <p class="tech-line small">Python &middot; scikit-learn &middot; OpenAI API &middot; Flask</p>
+          </article>
+          <article class="project reveal">
+            <span class="proj-num">02</span>
+            <h3>Device Decommissioning Automation</h3>
+            <p>Designed the SharePoint schema, front end, and automation that routes each retirement task by device type. Cut turnaround from about 2 weeks per 20 devices to about 3 days. Adopted as the official Cal Poly ITS process and selected for presentation at an inter-CSU IT conference.</p>
+            <p class="tech-line small">Power Apps &middot; Power Automate &middot; SharePoint</p>
+          </article>
+          <article class="project reveal">
+            <span class="proj-num">03</span>
+            <h3>Car Identifier</h3>
+            <p>AI web app that identifies a car's model and year from a photo, built with a team of four on the Stanford Cars dataset. Reached 87 percent accuracy by training and fine-tuning custom model architectures.</p>
+            <p class="tech-line small">Python &middot; PyTorch &middot; React</p>
+          </article>
+          <article class="project reveal">
+            <span class="proj-num">04</span>
+            <h3>Gym Social Web App</h3>
+            <p>Gym-focused social platform for Cal Poly students, built in a scrum team with sprint cycles and containerized with Docker for consistent deployment.</p>
+            <p class="tech-line small">JavaScript &middot; Docker &middot; Prisma &middot; Scrum</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="overline reveal">04 &middot; Toolbox</p>
+        <h2 class="reveal">What I work with.</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Languages</h3>
+            <p class="tech-line">Python &middot; TypeScript &middot; JavaScript &middot; Java &middot; C &middot; SQL &middot; HTML/CSS</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frameworks &amp; libraries</h3>
+            <p class="tech-line">React &middot; Next.js &middot; Node.js &middot; Flask &middot; PyTorch &middot; scikit-learn &middot; NumPy &middot; Drizzle ORM &middot; Prisma</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Tools &amp; platforms</h3>
+            <p class="tech-line">Git &middot; Docker &middot; Linux &middot; PostgreSQL &middot; Stripe &middot; REST APIs &middot; OpenAI API &middot; Vercel &middot; Oracle Cloud &middot; Jira</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Concepts</h3>
+            <p class="tech-line">System design &middot; Full-stack development &middot; RAG &amp; LLM pipelines &middot; Agile/Scrum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="overline reveal">05 &middot; Contact</p>
+        <h2 class="reveal">Let's build something.</h2>
+        <p class="contact-lede reveal">
+          I am open to software engineering roles and interesting problems.
+          Email is the fastest way to reach me; I usually reply within a day.
+        </p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-lg" href="mailto:muoney01@gmail.com">muoney01@gmail.com</a>
+          <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/murat-oney" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost btn-lg" href="https://github.com/muratoney" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost btn-lg" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Murat Oney</span>
+      <span>Hand-built with plain HTML and CSS. No frameworks, no trackers.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
