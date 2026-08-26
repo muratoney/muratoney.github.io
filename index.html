@@ -43,8 +43,8 @@
         <p class="hero-lede load-3">
           I design, build, and run software end to end. My latest is
           <strong>Distill</strong>, a study platform that turns open textbooks
-          into interactive courses. Solo-built, live in production, with Stripe
-          billing and machine-verified content.
+          into interactive courses. I built it solo, and it is live in
+          production with Stripe billing and machine-verified content.
         </p>
         <div class="hero-actions load-4">
           <a class="btn btn-primary" href="#distill">Explore Distill</a>
@@ -81,26 +81,25 @@
         <div class="distill-grid">
           <div class="distill-copy">
             <p class="reveal">
-              Distill starts with openly licensed textbooks that I curate, and
-              rebuilds each one as a complete course. Every chapter becomes
-              concepts with explanations, figures, and practice questions,
-              wrapped in XP, streaks, study pets, and leaderboards, and
-              scheduled for long-term review with FSRS spaced repetition.
-              Students pick a ready-made course from the catalog and start
-              studying.
+              Distill starts with openly licensed textbooks that I curate and
+              rebuilds each one as a complete course. Every chapter is distilled
+              into concepts, each with clear explanations, figures, and practice
+              questions, and everything is scheduled for long-term review with
+              FSRS spaced repetition. Students simply pick a ready-made course
+              from the catalog and start studying.
             </p>
             <p class="reveal">
               Behind it is a Python pipeline I built from scratch. Each book is
-              extracted from PDF, mapped into concepts, and run through
-              multi-pass LLM generation that produces 500 to 1,000 practice
-              questions per textbook, ingested into PostgreSQL with validation
-              at every step.
+              extracted from its PDF, mapped into concepts, and run through
+              multi-pass LLM generation, producing 500 to 1,000 practice
+              questions per textbook. Every result is validated before it lands
+              in PostgreSQL.
             </p>
             <p class="reveal">
               The part I am proudest of is the <strong>blind-solve gate</strong>:
               an independent model must re-derive every computed answer before a
-              question ships. That took wrong answer keys from 1.4 percent to
-              zero across roughly 2,000 audited questions.
+              question ships. That one check took wrong answer keys from 1.4
+              percent to zero across roughly 2,000 audited questions.
             </p>
             <div class="distill-cta reveal">
               <a class="btn btn-primary" href="https://studydistill.com" target="_blank" rel="noopener">Visit studydistill.com</a>
@@ -136,7 +135,7 @@
           </div>
           <div class="feature reveal">
             <h3>Run like a product</h3>
-            <p>Stripe billing, an installable PWA, and production infrastructure across Vercel, Railway, and Neon. I operate all of it.</p>
+            <p>Stripe handles billing, the app installs as a PWA, and I operate the production infrastructure across Vercel, Railway, and Neon.</p>
           </div>
         </div>
 
@@ -160,7 +159,7 @@
               <ul>
                 <li>Founded the company and shipped the entire product solo: Python content pipeline, Next.js app, PostgreSQL schema, infrastructure, and Stripe billing.</li>
                 <li>Built the multi-pass generation pipeline that produces 500 to 1,000 verified practice questions per textbook.</li>
-                <li>Cut wrong answer keys from 1.4 percent to zero with a blind-solve verification gate across roughly 2,000 audited questions.</li>
+                <li>Cut wrong answer keys from 1.4 percent to zero across roughly 2,000 audited questions with a blind-solve verification gate.</li>
               </ul>
             </div>
           </article>
@@ -186,7 +185,7 @@
               <h3>Student Assistant</h3>
               <p class="tl-org">Cal Poly Information Technology Services</p>
               <ul>
-                <li>Imaged and deployed 100+ devices for the Campus Computer Refresh program and the student rental fleet, managed through Jamf and Active Directory.</li>
+                <li>Imaged and deployed 100+ devices for the Campus Computer Refresh program and the student rental fleet, tracking and managing them through Jamf and Active Directory.</li>
               </ul>
             </div>
           </article>
@@ -215,25 +214,25 @@
           <article class="project reveal">
             <span class="proj-num">01</span>
             <h3>ITS Support Chatbot <span class="proj-tag">Senior project</span></h3>
-            <p>Retrieval pipeline that grounds GPT responses in Cal Poly's IT knowledge base: TF-IDF indexing and cosine ranking feed the top articles into the prompt. The top-ranked article was correct about 85 percent of the time across 200 real student questions. Chose TF-IDF over embeddings to eliminate per-query API cost with no measurable quality loss.</p>
+            <p>A retrieval pipeline that grounds GPT responses in Cal Poly's IT knowledge base: TF-IDF indexing and cosine ranking pick the most relevant articles and feed them into the prompt. Across 200 real student questions, the top-ranked article was correct about 85 percent of the time. I chose TF-IDF over embeddings to eliminate per-query API costs, with no measurable loss in quality.</p>
             <p class="tech-line small">Python &middot; scikit-learn &middot; OpenAI API &middot; Flask</p>
           </article>
           <article class="project reveal">
             <span class="proj-num">02</span>
             <h3>Device Decommissioning Automation</h3>
-            <p>Designed the SharePoint schema, front end, and automation that routes each retirement task by device type. Cut turnaround from about 2 weeks per 20 devices to about 3 days. Adopted as the official Cal Poly ITS process and selected for presentation at an inter-CSU IT conference.</p>
+            <p>I designed the SharePoint schema, the front end, and the automation that routes each device-retirement task to the right person. Turnaround fell from about 2 weeks per 20 devices to about 3 days, and the system was adopted as the official Cal Poly ITS process and presented at an inter-CSU IT conference.</p>
             <p class="tech-line small">Power Apps &middot; Power Automate &middot; SharePoint</p>
           </article>
           <article class="project reveal">
             <span class="proj-num">03</span>
             <h3>Car Identifier</h3>
-            <p>AI web app that identifies a car's model and year from a photo, built with a team of four on the Stanford Cars dataset. Reached 87 percent accuracy by training and fine-tuning custom model architectures.</p>
+            <p>An AI web app that identifies a car's model and year from a photo. Our team of four trained it on the Stanford Cars dataset and reached 87 percent accuracy by fine-tuning custom model architectures.</p>
             <p class="tech-line small">Python &middot; PyTorch &middot; React</p>
           </article>
           <article class="project reveal">
             <span class="proj-num">04</span>
             <h3>Gym Social Web App</h3>
-            <p>Gym-focused social platform for Cal Poly students, built in a scrum team with sprint cycles and containerized with Docker for consistent deployment.</p>
+            <p>A gym-focused social platform for Cal Poly students. We built it as a scrum team working in sprints and containerized it with Docker for consistent deployment.</p>
             <p class="tech-line small">JavaScript &middot; Docker &middot; Prisma &middot; Scrum</p>
           </article>
         </div>
